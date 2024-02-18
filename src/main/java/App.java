@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class App {
-
     WebDriver driver;
     String BASE_URL = "https://baykartech.com/tr/";
     String closeButton = "//button[@class='close']";
@@ -24,8 +23,6 @@ public class App {
     public void clickElement(String element){
         driver.findElement(By.xpath(element)).click();
     }
-
-
     public void setDriver(){
         driver = new ChromeDriver();
         driver.get(BASE_URL);

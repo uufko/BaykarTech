@@ -5,11 +5,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.Arrays;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class App {
+public class NavBar {
     WebDriver driver;
     String BASE_URL = "https://baykartech.com/tr/";
     String closeButton = "//button[@class='close']";
@@ -25,11 +23,11 @@ public class App {
     }
     public void setDriver(){
         driver = new ChromeDriver();
-        driver.get(BASE_URL);
-        driver.manage().window().maximize();
+
     }
     public void goPage(){
         driver.get(BASE_URL);
+        driver.manage().window().maximize();
     }
     public void closeWindow(){
         if(driver.findElement(By.xpath(closeButton)).isDisplayed()){

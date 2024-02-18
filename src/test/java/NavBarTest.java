@@ -1,7 +1,7 @@
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class NavBarTest extends App {
+public class NavBarTest extends NavBar {
     @BeforeClass
     public void setDriverTest(){
         setDriver();
